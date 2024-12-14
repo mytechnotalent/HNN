@@ -43,14 +43,14 @@ The neural network we analyze consists of the following components:
 
 
 ```python
-Image(filename = 'ae0.png')
+Image(filename = 'ae0.jpg')
 ```
 
 
 
 
     
-![png](README_files/README_6_0.png)
+![jpeg](README_files/README_6_0.jpg)
     
 
 
@@ -66,19 +66,19 @@ The gradients for each parameter are calculated as follows:
 - Gradient of the loss with respect to $o$: $\frac{\partial L}{\partial o}$
 - Gradient of $o$ with respect to $n$: $\frac{\partial o}{\partial n} = 1 - o^2$
 - Gradients for $w_1, w_2,$ and $b$:
-  $$
+  $
   \frac{\partial L}{\partial w_1} = x_1 \cdot (1 - o^2) \cdot \frac{\partial L}{\partial o}, \quad
   \frac{\partial L}{\partial w_2} = x_2 \cdot (1 - o^2) \cdot \frac{\partial L}{\partial o}, \quad
   \frac{\partial L}{\partial b} = (1 - o^2) \cdot \frac{\partial L}{\partial o}
-  $$
+  $
 
 ### Optimization
 The parameters are updated using gradient descent:
-$$
+$
 w_1 = w_1 - \eta \cdot \frac{\partial L}{\partial w_1}, \quad
 w_2 = w_2 - \eta \cdot \frac{\partial L}{\partial w_2}, \quad
 b = b - \eta \cdot \frac{\partial L}{\partial b}
-$$
+$
 
 Where $\eta$ is the learning rate.
 
@@ -129,7 +129,7 @@ torch.manual_seed(42)
 
 
 
-    <torch._C.Generator at 0x1154c9170>
+    <torch._C.Generator at 0x115db1150>
 
 
 
@@ -413,7 +413,7 @@ target.shape
 for epoch in range(epochs):
     
     # display the corresponding network diagram image
-    display(Image(filename=f"ae{epoch}.png"))
+    display(Image(filename=f"ae{epoch}.jpg"))
 
     # forward pass: calculate n (linear combination) and o (output using tanh)
     n = x1 * w1 + x2 * w2 + b  # n = x1*w1 + x2*w2 + b
@@ -472,7 +472,7 @@ for epoch in range(epochs):
 
 
     
-![png](README_files/README_51_0.png)
+![jpeg](README_files/README_51_0.jpg)
     
 
 
@@ -503,7 +503,7 @@ for epoch in range(epochs):
 
 
     
-![png](README_files/README_51_2.png)
+![jpeg](README_files/README_51_2.jpg)
     
 
 
@@ -534,7 +534,7 @@ for epoch in range(epochs):
 
 
     
-![png](README_files/README_51_4.png)
+![jpeg](README_files/README_51_4.jpg)
     
 
 
@@ -565,7 +565,7 @@ for epoch in range(epochs):
 
 
     
-![png](README_files/README_51_6.png)
+![jpeg](README_files/README_51_6.jpg)
     
 
 
@@ -596,7 +596,7 @@ for epoch in range(epochs):
 
 
     
-![png](README_files/README_51_8.png)
+![jpeg](README_files/README_51_8.jpg)
     
 
 
@@ -627,7 +627,7 @@ for epoch in range(epochs):
 
 
     
-![png](README_files/README_51_10.png)
+![jpeg](README_files/README_51_10.jpg)
     
 
 
@@ -658,7 +658,7 @@ for epoch in range(epochs):
 
 
     
-![png](README_files/README_51_12.png)
+![jpeg](README_files/README_51_12.jpg)
     
 
 
@@ -689,7 +689,7 @@ for epoch in range(epochs):
 
 
     
-![png](README_files/README_51_14.png)
+![jpeg](README_files/README_51_14.jpg)
     
 
 
@@ -720,7 +720,7 @@ for epoch in range(epochs):
 
 
     
-![png](README_files/README_51_16.png)
+![jpeg](README_files/README_51_16.jpg)
     
 
 
@@ -751,7 +751,7 @@ for epoch in range(epochs):
 
 
     
-![png](README_files/README_51_18.png)
+![jpeg](README_files/README_51_18.jpg)
     
 
 
@@ -785,7 +785,7 @@ for epoch in range(epochs):
 
 ```python
 # display the corresponding network diagram image
-display(Image(filename=f"ae10.png"))
+display(Image(filename=f"ae10.jpg"))
 
 # final Output
 print("\nFinal Output:")
@@ -798,7 +798,7 @@ print(f"  w1 = {w1.item():.6f}, w2 = {w2.item():.6f}, b = {b.item():.6f}")
 
 
     
-![png](README_files/README_53_0.png)
+![jpeg](README_files/README_53_0.jpg)
     
 
 
