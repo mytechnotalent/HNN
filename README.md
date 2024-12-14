@@ -55,44 +55,6 @@ Image(filename = 'ae0.jpg')
 
 
 
-The initial weights, biases, and outputs are calculated based on the equations:
-- Linear Combination: $n = x_1 \cdot w_1 + x_2 \cdot w_2 + b$
-- Activation: $o = \tanh(n)$
-
-## Gradient Calculations
-
-### Backpropagation
-The gradients for each parameter are calculated as follows:
-- Gradient of the loss with respect to $o$: $\frac{\partial L}{\partial o}$
-- Gradient of $o$ with respect to $n$: $\frac{\partial o}{\partial n} = 1 - o^2$
-- Gradients for $w_1, w_2,$ and $b$:
-  $
-  \frac{\partial L}{\partial w_1} = x_1 \cdot (1 - o^2) \cdot \frac{\partial L}{\partial o}, \quad
-  \frac{\partial L}{\partial w_2} = x_2 \cdot (1 - o^2) \cdot \frac{\partial L}{\partial o}, \quad
-  \frac{\partial L}{\partial b} = (1 - o^2) \cdot \frac{\partial L}{\partial o}
-  $
-
-### Optimization
-The parameters are updated using gradient descent:
-$
-w_1 = w_1 - \eta \cdot \frac{\partial L}{\partial w_1}, \quad
-w_2 = w_2 - \eta \cdot \frac{\partial L}{\partial w_2}, \quad
-b = b - \eta \cdot \frac{\partial L}{\partial b}
-$
-
-Where $\eta$ is the learning rate.
-
-## Visualization
-
-This repository includes **neural network diagrams** for visualizing the network's evolution across multiple epochs. Each diagram shows:
-- Input values: $x_1, x_2$
-- Weights: $w_1, w_2$
-- Bias: $b$
-- Intermediate value: $n$
-- Output: $o$
-
-Each epoch updates these values and recalculates the output based on the updated weights, biases, and gradients. The **10 diagrams** in this repository show the progression of the network over time.
-
 ## Install Libraries
 
 
@@ -129,7 +91,7 @@ torch.manual_seed(42)
 
 
 
-    <torch._C.Generator at 0x115db1150>
+    <torch._C.Generator at 0x10ff09170>
 
 
 
@@ -472,7 +434,7 @@ for epoch in range(epochs):
 
 
     
-![jpeg](README_files/README_51_0.jpg)
+![jpeg](README_files/README_48_0.jpg)
     
 
 
@@ -503,7 +465,7 @@ for epoch in range(epochs):
 
 
     
-![jpeg](README_files/README_51_2.jpg)
+![jpeg](README_files/README_48_2.jpg)
     
 
 
@@ -534,7 +496,7 @@ for epoch in range(epochs):
 
 
     
-![jpeg](README_files/README_51_4.jpg)
+![jpeg](README_files/README_48_4.jpg)
     
 
 
@@ -565,7 +527,7 @@ for epoch in range(epochs):
 
 
     
-![jpeg](README_files/README_51_6.jpg)
+![jpeg](README_files/README_48_6.jpg)
     
 
 
@@ -596,7 +558,7 @@ for epoch in range(epochs):
 
 
     
-![jpeg](README_files/README_51_8.jpg)
+![jpeg](README_files/README_48_8.jpg)
     
 
 
@@ -627,7 +589,7 @@ for epoch in range(epochs):
 
 
     
-![jpeg](README_files/README_51_10.jpg)
+![jpeg](README_files/README_48_10.jpg)
     
 
 
@@ -658,7 +620,7 @@ for epoch in range(epochs):
 
 
     
-![jpeg](README_files/README_51_12.jpg)
+![jpeg](README_files/README_48_12.jpg)
     
 
 
@@ -689,7 +651,7 @@ for epoch in range(epochs):
 
 
     
-![jpeg](README_files/README_51_14.jpg)
+![jpeg](README_files/README_48_14.jpg)
     
 
 
@@ -720,7 +682,7 @@ for epoch in range(epochs):
 
 
     
-![jpeg](README_files/README_51_16.jpg)
+![jpeg](README_files/README_48_16.jpg)
     
 
 
@@ -751,7 +713,7 @@ for epoch in range(epochs):
 
 
     
-![jpeg](README_files/README_51_18.jpg)
+![jpeg](README_files/README_48_18.jpg)
     
 
 
@@ -798,7 +760,7 @@ print(f"  w1 = {w1.item():.6f}, w2 = {w2.item():.6f}, b = {b.item():.6f}")
 
 
     
-![jpeg](README_files/README_53_0.jpg)
+![jpeg](README_files/README_50_0.jpg)
     
 
 
