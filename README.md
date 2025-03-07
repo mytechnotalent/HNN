@@ -11,7 +11,7 @@ Image(filename = 'HNN.jpeg')
 
 
     
-![jpeg](README_files/README_1_0.jpg)
+![png](https://github.com/mytechnotalent/HNN/blob/main/hnn.png?raw=true)
     
 
 
