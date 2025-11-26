@@ -7,14 +7,7 @@ from IPython.display import Image
 Image(filename = 'HNN.jpeg')
 ```
 
-
-
-
-    
 ![png](https://github.com/mytechnotalent/HNN/blob/main/hnn.png?raw=true)
-    
-
-
 
 # Hacking Neural Networks
 
